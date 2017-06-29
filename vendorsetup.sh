@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_angler-userdebug
+add_lunch_combo aokp_angler-eng
+add_lunch_combo aokp_angler-userdebug
