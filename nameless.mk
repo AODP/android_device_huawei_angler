@@ -2,14 +2,15 @@
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common stuff.
-$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/nameless/config/common_full.mk)
+
 
 # Inherit device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := aokp_angler
+PRODUCT_NAME := nameless_angler
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6P
 
